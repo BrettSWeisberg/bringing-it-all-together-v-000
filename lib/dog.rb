@@ -62,4 +62,10 @@ class Dog
     Dog.new(id: dog[0], name: dog[1], breed: dog[2])
   end
 
+  def self.new_from_db(row)
+    dog = Dog.new(name:row[1],breed:row[2],id:row[0])
+    dog.save
+    dog
+  end
+
 end
