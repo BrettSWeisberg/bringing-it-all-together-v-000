@@ -85,6 +85,7 @@ class Dog
 
       dog = DB[:conn].execute(sql,name)[2]
       self
+      binding.pry
     #  find_dog = [name:dog[1],breed:dog[2],id:dog[0]]
     #  Dog.new(id: dog[0], name: dog[1], breed: dog[2])
     end
